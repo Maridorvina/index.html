@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+
+</head>
+
+<body>
+    <div
+    class="content-main">
+    <aside class="side-menu">
+        <div class="sport-menu">
+            <img src="./img/dribbble.png" alt="">
+            <span class="item-menu">Esporte</span>
+        </div>
+        <div class="sport-menu">
+            <img src="./img/dribbble.png" alt="">
+            <span class="item-menu" alt="">Lazer</span>            
+        </div>   
+    </aside>
+        <section class="sport">
+            <article class="sport-menu">
+            <h1>Esportes</h1>
+           <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever 
+                since the 1500s, when an unknown printer took a galley of type and 
+                scrambled it to make a type specimen book. 
+           </p>
+           <div>
+               <button id="btn-imagens" onclick="openHelloworld()">Galeria</button>
+               <p id="teste"></p>
+           </div>
+            </article>
+        </section>
+        <form onsubmit="submitValue()">
+            <input type="email" name="email"/>
+            <button>Enviar</button>
+        </form>
+    </div>
+    <script>
+       function openHelloworld () {
+          document.getElementById("teste").innerHTML = "Hello world";    
+       }
+       function submitValue () {
+           alert('Os dados foram enviados');
+       }
+    </script>
+</body>
+</html>
